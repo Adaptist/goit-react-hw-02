@@ -1,0 +1,31 @@
+.table {
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: center;
+}
+
+.table thead {
+  background-color: darkslategrey;
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 4px 36px;
+  border: 1px solid #000;
+}
+
+.table tbody tr {
+  background-color: whitesmoke;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.table tbody tr:hover {
+  background-color: lightseagreen;
+}

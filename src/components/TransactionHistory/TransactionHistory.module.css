@@ -26,6 +26,8 @@
   background-color: lightgrey;
 }
 
-.table tbody tr:hover {
+.table tbody tr:hover,
+:focus {
   background-color: lightseagreen;
+  cursor: pointer;
 }

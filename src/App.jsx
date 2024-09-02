@@ -2,7 +2,6 @@ import Profile from "./components/Profile/Profile.jsx";
 import FriendList from "./components/FriendList/FriendList.jsx";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory.jsx"
 
-
 import userData from "../src/userData.json";
 import friends from "../src/friends.json";
 import transactions from "../src/transactions.json"

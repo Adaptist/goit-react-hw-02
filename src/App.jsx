@@ -1,10 +1,11 @@
-
-import Profile from './components/Profile/Profile.jsx';
-import userData from './userData.json';
+import FriendList from "./components/FriendList/FriendList.jsx";
+import Profile from "./components/Profile/Profile.jsx";
+import userData from "./userData.json";
+import friends from "../src/friends.json";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -12,7 +13,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-    </div>
+      <FriendList friends={friends} />
+    </>
   );
 };
 

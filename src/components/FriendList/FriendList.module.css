@@ -1,0 +1,6 @@
+.friendList {
+  display: flex;
+  justify-content: center; /* Центрируем список друзей */
+  flex-wrap: wrap;
+  gap: 12px;
+}

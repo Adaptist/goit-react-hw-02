@@ -1,4 +1,4 @@
-const Options = ({ feedback,totalFeedback, positiveFeedbackPercent }) => (
+const Options = ({ feedback, totalFeedback, positiveFeedbackPercent }) => (
   <div>
     <p>Good: {feedback.good}</p>
     <p>Neutral: {feedback.neutral}</p>

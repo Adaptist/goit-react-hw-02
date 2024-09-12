@@ -24,13 +24,22 @@ const App = () => {
 
   const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
 
+  const positiveFeedbackPercent =
+    totalFeedback > 0 ? Math.round((feedback.good / totalFeedback) * 100) : 0;
+
   return (
     <div>
       <Description />
-      <Feedback updateFeedback={updateFeedback} totalFeedback={totalFeedback} resetFeedback={resetFeedback} />
+      <Feedback 
+        updateFeedback={updateFeedback} 
+        totalFeedback={totalFeedback} 
+        resetFeedback={resetFeedback} />
       {totalFeedback > 0 ? (
         <>
-          <Options feedback={feedback}  />
+          <Options 
+            feedback={feedback}
+            totalFeedback={totalFeedback}
+            positiveFeedbackPercent={positiveFeedbackPercent} />
         </>
       ) : (
         <Notification message="No feedback given yet." />

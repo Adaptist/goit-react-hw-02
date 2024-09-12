@@ -1,8 +1,8 @@
-const Feedback = () => (
+const Feedback = ({ onFeedback }) => (
   <div>
-    <button>Good</button>
-    <button>Neutral</button>
-    <button>Bad</button>
+    <button onClick={() => onFeedback('good')}>Good</button>
+    <button onClick={() => onFeedback('neutral')}>Neutral</button>
+    <button onClick={() => onFeedback('bad')}>Bad</button>
   </div>
 );
 

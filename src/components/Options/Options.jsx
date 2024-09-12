@@ -1,8 +1,8 @@
-const Options = () => (
+const Options = ({ feedback }) => (
   <div>
-    <p>Good: </p>
-    <p>Neutral: </p>
-    <p>Bad: </p>
+    <p>Good: {feedback.good}</p>
+    <p>Neutral: {feedback.neutral}</p>
+    <p>Bad: {feedback.bad}</p>
   </div>
 );
 

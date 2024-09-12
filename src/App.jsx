@@ -10,17 +10,17 @@ const App = () => {
     bad: 0,
   });
 
-  const handleFeedback = (type) => {
+  const updateFeedback = (feedbackType) => {
     setFeedback((prevFeedback) => ({
       ...prevFeedback,
-      [type]: prevFeedback[type] + 1,
+      [feedbackType]: prevFeedback[feedbackType] + 1,
     }));
   };
 
   return (
     <div>
       <Description />
-      <Feedback onFeedback={handleFeedback} />
+      <Feedback updateFeedback={updateFeedback} />
       <Options feedback={feedback} />
     </div>
   );
